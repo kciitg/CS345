@@ -1,0 +1,9 @@
+alter table Dept
+modify column managerid int not null;
+
+update Emp e
+set e.salary = e.salary *1.1;
+
+Question4
+insert into Emp
+values(101,'John Doe',32,15000);
