@@ -1,4 +1,29 @@
+Question2
+create database Lab2_CS_59;
+use Lab2_CS_59;
+create table Emp
+	(eid int not null,
+	ename varchar(10),
+	age int not null,
+	salary real,
+	primary key(eid));
 
+create table Dept
+	(did int not null,
+	dname varchar(10),
+	budget real,
+	managerid int,
+	primary key(did)
+	);
+
+create table Works
+	(eid int not null,
+	did int not null,
+	pcttime int,
+	primary key(Eid,Did),
+	foreign key (eid) references Emp(eid),
+	foreign key(did) references Dept(did)
+	);
 
 
 Question3
