@@ -1,0 +1,3 @@
+AUg10-Aug17
+Lab1 creating simple webbased course registration using plain txt files
+Lab2 sql queries
